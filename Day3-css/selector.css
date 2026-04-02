@@ -1,0 +1,27 @@
+/* universal selector */
+*{
+    background-color: bisque;
+    margin: 10px;
+}
+
+/* Id selector */
+#div4{
+    color: rosybrown;
+}
+
+/* Class selector */
+.div2{
+    border: solid brown;
+    color: blueviolet;
+}
+
+/* element selector */
+div{
+    color: green;
+}
+
+/* grp of selectors */
+b, i, span{
+    display: block;
+    margin: 15px;
+}

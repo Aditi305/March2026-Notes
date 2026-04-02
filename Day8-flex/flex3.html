@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .navbar  {
+            display: flex;
+            justify-content: flex-end;
+            height: 50px;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        }
+
+        a:hover {
+            color: blueviolet;
+            text-decoration: underline;
+        }
+
+        .profile {
+            margin-right: auto;
+            border: 1px solid black;
+        }
+
+        .main {
+            height: 400px;
+            width: 100px;
+            display: flex;
+            justify-content: left;
+            margin-top: 200px;
+            flex-direction: column;
+        }
+
+        i {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navItem profile">img</div>
+        <div class="navItem"><a href="">Home</a></div>
+        <div class="navItem"><a href="">Services</a></div>
+        <div class="navItem"><a href="">Contact</a></div>
+        <div class="navItem"><a href="">Register</a></div>
+        <div class="navItem"><a href="">Login</a></div>
+    </div>
+
+    <div class="main">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(99, 230, 190);"></i></a>
+        <a href="https://twitter.com/your-profile" target="_blank"><i class="fa-brands fa-twitter" style="color: rgb(29, 161, 242);"></i></a>
+        <a href="https://www.facebook.com/your-profile" target="_blank"><i class="fa-brands fa-facebook-f" style="color: rgb(66, 103, 178);"></i></a>
+        <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fa-brands fa-instagram" style="color: rgb(220, 53, 119);"></i></a>
+        <a href="https://www.youtube.com/your-profile" target="_blank"><i class="fa-brands fa-youtube" style="color: rgb(255, 0, 0);"></i></a>
+    </div>
+</body>
+
+</html>

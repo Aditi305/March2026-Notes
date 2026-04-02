@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="userName">UserName: </label>
+            <input type="text" name="userName" id="userName" placeholder="enter name">
+            <br><br>
+
+            <label for="fatherName">Father Name</label>
+            <input type="text" name="fatherName" id="fatherName" placeholder="enter father name">
+            <br><br>
+
+            <label for="motherName">Mother Name</label>
+            <input type="text" name="motherName" id="motherName" placeholder="enter mother name">
+            <br><br>
+
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" placeholder="enter age" min="10" max="50">
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="datetime" name="dob" placeholder="Date of birth" id="dob">
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <input type="radio" name="gender" id="gender" value="other">Others
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="enter email">
+            <br><br>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" placeholder="enter phone">
+            <br><br>
+
+            <label for="linkedin">Linkedin Url</label>
+            <input type="url" name="linkedin" id="linkedin" placeholder="enter linkedin url">
+            <br><br>
+
+            <label for="address">Address: </label>
+            <textarea name="address" id="address" placeholder="enter address" rows="5" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favourites</legend>
+            <label for="">Languages</label>
+            <input type="checkbox" name="lang" value="java">Java
+            <input type="checkbox" name="lang" value="python">Python
+            <input type="checkbox" name="lang" value="c++">C++
+            <input type="checkbox" name="lang" value="javascript">Javascript
+            <input type="checkbox" name="lang" value="sql">SQL
+            <input type="checkbox" name="lang" value="ruby">Ruby
+
+
+            <br><br>
+            <label for="food">Food</label>
+            <select name="food" id="food">
+                <option value="">Select</option>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="pasta">Pasta</option>
+                <option value="biryani">Biryani</option>
+                <option value="sushi">Dosa</option>
+            </select>
+            <br><br>
+
+            <label for="pets">Pets</label>
+            <input list="pets">
+            <datalist id="pets">
+                <option value="dog">
+                <option value="cat">
+                <option value="bird">
+                <option value="fish">
+            </datalist>
+            </select>
+
+        </fieldset>
+
+        <br>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+    </form>
+</body>
+
+</html>
+
+<!-- 
+fieldset: it is used to group related elements in a form and draws a box around them. It also helps to organize the form and make it more user-friendly.
+
+legend: it is used to provide a caption for the fieldset. It is placed inside the fieldset element and typically appears as a title for the grouped elements.
+
+input type: text
+            password
+            number
+            email
+            tel
+            url
+            search
+            month
+            week
+            date
+            datetime
+            file
+            time
+            radio
+            checkbox
+            submit
+            reset
+            hidden   
+            color
+            range
+
+select: it is used to create a drop-down list. It contains option elements that define the available options in the list.
+
+datalist: it is used to provide an autocomplete feature for input elements. It contains option elements that define the available options for the input field.
+-->

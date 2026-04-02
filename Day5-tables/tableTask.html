@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Product Table Styling */
+        .product{
+            border: none;
+        }
+        .product th {
+            background-color: #8cc63f;
+            color: white;
+        }
+
+        .product td {
+            background-color: #c5dcb3;
+        }
+
+        /* Ninja Table Styling */
+        .ninja-title {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .ninja th {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: #e6a0aa;
+        }
+
+        .footer {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task 1</h1>
+    <h1>Table With Uncollapsed Borders</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email address</th>
+        </tr>
+        <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>market Manager</td>
+            <td>example2@company.com</td>
+        </tr>
+        <tr>
+            <td>Zendaya Grace</td>
+            <td>CEO</td>
+            <td>example3@company.com</td>
+        </tr>
+    </table>
+
+    <hr />
+    <h1>Task 2</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Heading</th>
+            <th colspan="4">Details</th>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Student List</td>
+            <td>1</td>
+            <td>Victor</td>
+            <td>Computer Science</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Electronics</td>
+            <td>23456</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</td>
+            <td>Electrical</td>
+            <td>34567</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rick</td>
+            <td>Civil</td>
+            <td>45678</td>
+        </tr>
+    </table>
+
+    <hr />
+    <h1>Task 3</h1>
+    <table>
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td colspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td rowspan="2" colspan="2">Project</td>
+        </tr>
+
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+        </tr>
+    </table>
+
+    <hr />
+    <h1>Task 4</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Extended</th>
+        </tr>
+        <tr>
+            <td>Hard Disk</td>
+            <td>1</td>
+            <td>500$</td>
+            <td>400$</td>
+        </tr>
+        <tr>
+            <td>Cd Drive</td>
+            <td>1</td>
+            <td>200$</td>
+            <td>500$</td>
+        </tr>
+        <tr>
+            <td>Cds</td>
+            <td>10</td>
+            <td>20$</td>
+            <td>50$</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="total">Total Amount</td>
+            <td class="total">950$</td>
+        </tr>
+    </table>
+
+    <hr />
+    <h1>Task 5</h1>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3"> Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00</td>
+            <td rowspan="2">5:00</td>
+            <td>Introduction to HTML</td>
+        <tr>
+            <td>Validity DtD and RelaxNG</td>
+        </tr>
+        </tr>
+        <tr>
+            <td rowspan="4">Tuesday</td>
+        <tr>
+            <td>8:00</td>
+            <td>11:00</td>
+            <td>Xpath</td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td>2:00</td>
+            <td rowspan="2">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>2:00</td>
+            <td>5:00</td>
+        </tr>
+        </tr>
+    </table>
+
+    <hr />
+    <h1>Task 6</h1>
+    <table class="product">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Quality</th>
+            <th>Product Quantity</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Wheat</td>
+            <td>Good</td>
+            <td>200 Bags</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rice</td>
+            <td>Good</td>
+            <td>250 Bags</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sugar</td>
+            <td>Good</td>
+            <td>200 Bags</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sugar</td>
+            <td>Good</td>
+            <td>200 Bags</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sugar</td>
+            <td>Good</td>
+            <td>200 Bags</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sugar</td>
+            <td>Good</td>
+            <td>200 Bags</td>
+        </tr>
+    </table>
+
+    <hr />
+    <h1>Task 7</h1>
+    <div class="ninja-title">Ninja Details</div>
+    <table class="ninja">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+        <tr class="highlight">
+            <td>Ninja A</td>
+            <td>18</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Ninja B</td>
+            <td>23</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Ninja C</td>
+            <td>22</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="footer">Ninja C - the best learner!</td>
+        </tr>
+    </table>
+</body>
+
+</html>
